@@ -60,7 +60,7 @@ When a workspace is activated, the following actions occur in sequence:
 In Windows, killing a parent process often leaves "zombie" child processes (like Vite/Node servers) still holding the port. I utilized `taskkill /F /T` to recursively traverse the process tree and guarantee the port is 100% freed.
 
 ### Idempotent Execution
-The utility is designed to reach the "Target State" regardless of the current system state. It uses try-except blocks to ensure that if a port is already clear or an app is already closed, the script continues without error.
+The utility is designed to reach the Target State regardless of the current system state. It uses try-except blocks to ensure that if a port is already clear or an app is already closed, the script continues without error.
 
 ### Hybrid Interface (CLI + GUI)
 I implemented a dual-mode interface using `tkinter` and `sys.argv`. This provides the speed of a CLI for power-users and a GUI for real-time log monitoring.
