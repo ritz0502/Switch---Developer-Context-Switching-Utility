@@ -39,6 +39,7 @@ The utility uses a JSON-based configuration to define the "Desired State" of eac
 1. Place `switch.py` and `config.json` in the same folder.
 2. Ensure your `config.json` paths use `/` or `\\`.
 3. **GUI Mode**: Run `python switch.py` to open the Dashboard.
+   ![GUI Screenshot](outputs/output1-switchGUI-terminal.png)
 4. **CLI Mode**: Run `python switch.py [workspace_name]` (e.g., `python switch.py aquamind`).
 
 ---
@@ -46,11 +47,19 @@ The utility uses a JSON-based configuration to define the "Desired State" of eac
 ## 4. Expected Outputs
 When a workspace is activated, the following actions occur in sequence:
 
-- **Distraction Teardown**: Applications listed in `apps_to_close` are terminated instantly.
+- **Distraction Teardown**: Applications listed in `apps_to_close` are terminated instantly.  
+  ![Closed Apps Screenshot](outputs/output_closedapps.png)
+
 - **Port Resolution**: The script identifies the PID holding the specified port, terminates the process tree, and confirms:  
-  `Success: Terminated process tree on port 5173.`
-- **VS Code Launch**: A new VS Code instance opens directly to the project directory.
-- **Browser Synchronization**: The default browser opens the defined GitHub repository and local development URL.
+  `Success: Terminated process tree on port 5173.`  
+  ![Port Closed Screenshot](outputs/output-closed_port.png)
+
+- **VS Code Launch**: A new VS Code instance opens directly to the project directory.  
+  ![VS Code Launched Screenshot](outputs/output-vscodeLaunched.png)
+
+- **Browser Synchronization**: The default browser opens the defined GitHub repository and local development URL.  
+  ![GitHub Page Screenshot](outputs/output-github_page.png)
+
 
 ---
 
@@ -67,3 +76,5 @@ I implemented a dual-mode interface using `tkinter` and `sys.argv`. This provide
 
 ### Standard Library Constraint
 To ensure zero-dependency portability (no `pip install` required), I relied exclusively on Python’s built-in modules: `subprocess`, `tkinter`, `json`, and `webbrowser`.
+
+
