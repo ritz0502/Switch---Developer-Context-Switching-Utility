@@ -47,7 +47,7 @@ The utility uses a JSON-based configuration to define the "Desired State" of eac
 ## 4. Expected Outputs
 When a workspace is activated, the following actions occur in sequence:
 
-- **Distraction Teardown**: Applications listed in `apps_to_close` are terminated instantly.  
+- **Distraction Teardown**: Applications listed in `apps_to_close` are terminated instantly- apps like Spotify and WhatsApp which were previously open are now closed.
   ![Closed Apps Screenshot](outputs/output_closedapps.png)
 
 - **Port Resolution**: The script identifies the PID holding the specified port, terminates the process tree, and confirms:  
