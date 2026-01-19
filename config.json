@@ -1,0 +1,20 @@
+{
+  "aquamind": {
+    "path": "D:/Desktop/projects/aquamind",
+    "urls": [
+      "https://github.com/ritz0502/aquamind",
+      "http://localhost:5173"
+    ],
+    "ports": [5173],
+    "apps_to_close": ["Spotify","WhatsApp.Root", "Grammarly.Desktop"]
+  },
+  "diagnosure": {
+    "path": "D:/Desktop/projects/DiagnoSure-main",
+    "urls": [
+      "https://github.com/PrachiBarhate23/DiagnoSure",
+      "http://localhost:5173"
+    ],
+    "ports": [5173],
+    "apps_to_close": ["WhatsApp.Root", "Spotify", "Grammarly.Desktop"]
+  }
+}
